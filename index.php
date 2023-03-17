@@ -25,8 +25,8 @@ require_once("config.php");
 // // $aluno->setDessenha("@lun0");
 // $aluno->insert();
 //echo $aluno;
-
-
+/*
+//Alterar um usuario
 $usuario = new Usuario();
 
 $usuario->loadById(6);
@@ -34,4 +34,14 @@ $usuario->loadById(6);
 $usuario->update("prljlkofessor", "!@#$%");
 
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
+
+echo $usuario;
+
 ?>
